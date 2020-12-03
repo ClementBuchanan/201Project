@@ -77,5 +77,5 @@ for (i = 0; i < colors.length; i++ ){
    guess = prompt('Wrong color. Please try again'); 
 }
   console.log(i);
-}
+} 
 alert('Thank you for playing this game ' + userName + '. You\'ve exceeded the number of attempts. The correct answer was '+ answer + ' You were a good sport.');
