@@ -9,7 +9,7 @@ bio.toLowerCase;
 if ((bio === 'yes') || (bio === 'y')){
   alert('That\'s Greeeaaaat! Now answer the next question.');
 } else {
-  alert('Wrong answer');
+  alert('Wrong answer. You have not read my bio');
 }
 
 // Question two
@@ -18,7 +18,7 @@ city.toLowerCase;
 if ((city === 'yes') || (city === 'y')){
   alert('That\'s correct ' + userName + '. Thank you for knowing this. Move on to the next question.');
 } else {
-alert('Wrong answer');
+alert('Wrong answer. You have to read it ' + userName + '.');
 }
 
 // Question three
@@ -27,7 +27,7 @@ vet.toLowerCase;
 if ((vet === 'yes') || (vet === 'y')){
   alert('That\'s correct ' + userName + ' you do know more things about me. Move on to the next question.');
 } else {
-alert('Wrong answer');
+alert('Awe jeez that\'s the wrong answer again.');
 }
 
 // Question four
@@ -36,7 +36,7 @@ work.toLowerCase;
 if ((work === 'yes') || (work === 'y')){  
   alert('That\'s correct ' + userName + ' you really know a lot about me. Move on to the next question.');
 } else {
-  alert('Wrong answer');
+  alert('Hmm!! Please read it.');
 }
 
 // Question five
@@ -45,9 +45,10 @@ future.toLowerCase;
 if ((future === 'yes') || (future === 'y')){  
   alert('Yowza ' + userName + ' you really are smart.');
 } else {
-  alert('Wrong answer');
+  alert('That\'s still the wrong answer');
 }
 
+// Question 6
 alert('You will now have five chances to guess a number between 1 and 10');
 
 var answer = 8;
@@ -55,27 +56,32 @@ var guess = prompt('So what\'s your guess?');
 var i;
 for (i = 0; i < 4; i++ ){
     if (answer == guess){
-      alert('You guessed correctly. The correct answer was ' + answer);
+      alert('You guessed correctly. The correct answer is ' + answer);
         break;
     } else {
-     guess = prompt('Wrong answer. Please try again'); 
+     guess = prompt('Wrong answer. Please try againOK. Now you\'re just been difficult. Let\'s move on.'); 
 }
     console.log(i);
 }
 
-alert('Finally you will have 6 chances to guess a color');
+// Question 7
+alert('Lastly, you will have 6 chances to guess a color');
+var guess = prompt('Think of a color. Any color.');
 
 var colors = ['fusia', 'dark grey', 'blood red', 'orange', 'green', 'pink', 'sky blue'];
-var guess = prompt('Think of a color. Any color.');
-var i;
+var guesses = 6;
+var correctAnswer = false;
 
-for (i = 0; i < colors.length; i++ ){
-  if (guess == colors){
-    alert('You guessed correctly. The correct answer was ' + guess);
+console.log('colors');
+
+for (var correctAnswer = ('fuscia');
+  for (j = 0; j < 6; i++ ){
+    if (guess == colors[1]){
+      alert('You guessed correctly. The correct color was ' + correctAnswer + '.');
       break;
   } else {
    guess = prompt('Wrong color. Please try again'); 
 }
-  console.log(i);
+  console.log(j);
 } 
 alert('Thank you for playing this game ' + userName + '. You\'ve exceeded the number of attempts. The correct answer was '+ answer + ' You were a good sport.');
