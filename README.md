@@ -8,8 +8,9 @@ I built an app with a sole purpose in mind. My app says a lot about me, my goals
 
 ## Links and Resources
 
-* submission PR
-* Any Links you used as reference
+### YouTube videos
+    * https://www.youtube.com/watch?v=fOFSmCjvcFY
+    * https://www.youtube.com/watch?v=qdcPmQdrJac
 
 ## Reflections and Comments
 
