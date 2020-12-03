@@ -8,7 +8,7 @@ I built an app with a sole purpose in mind. My app says a lot about me, my goals
 
 ## Links and Resources
 
-### YouTube videos
+### YouTube Videos
     * https://www.youtube.com/watch?v=fOFSmCjvcFY
     * https://www.youtube.com/watch?v=qdcPmQdrJac
 
