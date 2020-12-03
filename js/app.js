@@ -47,17 +47,25 @@ if ((future === 'yes') || (future === 'y')){
 } else {
   alert('Wrong answer');
 }
+
 alert('You will now have five chances to guess a number between 1 and 10');
+
 var answer = 8;
 var guess = prompt('So what\'s your guess?');
+var counter = 0;
+var maxTries = 4;
 var i;
 for (i = 0; i < 4; i++ ){
     if (answer == guess){
-      alert('You guessed correctly');
+      alert('You guessed correctly. The correct answer was ' + answer);
         break;
     } else {
      guess = prompt('Wrong answer. Please try again'); 
+//      counter += 1
+// } if (counter > i++){
+//   document.write('You have no more tries left. The correct answer is ' + answer);
+//   break;
 }
     console.log(i);
 }
-alert('Thank you for playing this game ' + userName + '. You\'ve been a good sport.');
+alert('Thank you for playing this game ' + userName + '. You\'ve exceeded the number of attempts. The correct answer was '+ answer + ' You were a good sport.');
