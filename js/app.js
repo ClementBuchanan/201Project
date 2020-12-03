@@ -52,8 +52,6 @@ alert('You will now have five chances to guess a number between 1 and 10');
 
 var answer = 8;
 var guess = prompt('So what\'s your guess?');
-var counter = 0;
-var maxTries = 4;
 var i;
 for (i = 0; i < 4; i++ ){
     if (answer == guess){
@@ -61,11 +59,23 @@ for (i = 0; i < 4; i++ ){
         break;
     } else {
      guess = prompt('Wrong answer. Please try again'); 
-//      counter += 1
-// } if (counter > i++){
-//   document.write('You have no more tries left. The correct answer is ' + answer);
-//   break;
 }
     console.log(i);
+}
+
+alert('Finally you will have 6 chances to guess a color');
+
+var colors = ['fusia', 'dark grey', 'blood red', 'orange', 'green', 'pink', 'sky blue'];
+var guess = prompt('Think of a color. Any color.');
+var i;
+
+for (i = 0; i < colors.length; i++ ){
+  if (guess == colors){
+    alert('You guessed correctly. The correct answer was ' + guess);
+      break;
+  } else {
+   guess = prompt('Wrong color. Please try again'); 
+}
+  console.log(i);
 }
 alert('Thank you for playing this game ' + userName + '. You\'ve exceeded the number of attempts. The correct answer was '+ answer + ' You were a good sport.');
