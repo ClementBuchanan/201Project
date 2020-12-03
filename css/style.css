@@ -17,6 +17,10 @@ h1 {
   border: medium solid black;
   /* margin: auto; */
 }
+h3 {
+  font-size: 5em;
+  text-align: left;
+}
 
 #first-paragraph {
   background-color: rgb(157, 217, 219);
