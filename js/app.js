@@ -13,7 +13,7 @@ function biology() {
   if ((bio === 'yes') || (bio === 'y')) {
     alert('That\'s Greeeaaaat! Now answer the next question.');
   } else {
-    alert('Wrong answer. You have not read my bio');
+    alert('You need to read my bio');
   }
 }
 biology();
@@ -73,19 +73,21 @@ function alert2() {
 alert2();
 
 function answer2() {
-  var answer = 8;
-  var guess = prompt('So what\'s your guess?');
-  var i;
-  for (i = 0; i < 4; i++) {
-    if (answer === guess) {
-      alert('You guessed correctly. The correct answer is ' + answer);
-      break;
-    } else {
-      guess = prompt('Wrong answer. Please try againOK. Now you\'re just been difficult. Let\'s move on.');
+  var guessNumber = 5;
+  var myNumber = 7;
+  for (var j = 0; j < guessNumber; j++) {
+  var userNumber = prompt('I\'m thinking of a number between 1 and 10. Guess what number it is?');
+    if (userNumber > myNumber){
+      alert('Your guess is too high. Please try again.');
+    } else if (userNumber < myNumber){
+    alert('You\'re too low. Please try again.');
+    } else if (userNumber == myNumber) {
+    alert('Ding, Ding, Ding you\'re a winner.');
+    break;
     }
-    console.log(i);
   }
-}
+    alert('I was thinking of ' + myNumber + '. Thank you for playing ' + userName + '.');
+  }
 answer2();
 
 // Question 7
