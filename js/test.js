@@ -43,6 +43,7 @@ if ((future === 'yes') || (future === 'y')){
 } else {
   alert('Wrong answer');
 }
+// Question four
 alert('You will now have five chances to guess a number.');
 var guessNumber = 5;
 var myNumber = 7;
@@ -57,6 +58,7 @@ var userNumber = prompt('I\'m thinking of a number between 1 and 10. Guess what 
   break;
   }
 }
+//question five
   alert('I was thinking of ' + myNumber + '. Thank you for playing ' + userName + '.');
 alert('Lastly, you will have 6 chances to guess a color.');
 var colors = ['fusia', 'orange', 'green', 'pink', 'sky blue'];

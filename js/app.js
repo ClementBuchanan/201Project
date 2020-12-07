@@ -91,23 +91,26 @@ function answer2() {
 answer2();
 
 // Question 7
-// alert('Lastly, you will have 6 chances to guess a color');
-// var guess = prompt('Think of a color. Any color.');
+alert('Lastly, you will have 6 chances to guess a color');
 
-// var colors = ['fusia', 'dark grey', 'blood red', 'orange', 'green', 'pink', 'sky blue'];
-// var guesses = 6;
-// var correctAnswer = false;
+function colors2() {
+var guess = prompt('Think of a color. Any color.');
+var colors = ['fusia', 'dark grey', 'blood red', 'orange', 'green', 'pink', 'sky blue'];
+var guesses = 6;
+var correctAnswer = false;
 
-// console.log('colors');
+console.log('colors');
 
-// for (var correctAnswer = ('fuscia');
-//   for (j = 0; j < 6; i++ ){
-//     if (guess == colors[1]){
-//       alert('You guessed correctly. The correct color was ' + correctAnswer + '.');
-//       break;
-//   } else {
-//    guess = prompt('Wrong color. Please try again'); 
-// }
-//   console.log(j);
-// } 
-// alert('Thank you for playing this game ' + userName + '. You\'ve exceeded the number of attempts. The correct answer was '+ answer + ' You were a good sport.');
+for (var correctAnswer = ('fuscia');
+  for (var k = 0; k < 6; k++ ) {
+    if (guess == colors[1]){
+      alert('You guessed correctly. The correct color was ' + correctAnswer + '.');
+      break;
+  } else {
+   guess = prompt('Wrong color. Please try again'); 
+}
+  console.log(j);
+} 
+alert('Thank you for playing this game ' + userName + '. You\'ve exceeded the number of attempts. The correct answer was '+ answer + ' You were a good sport.');
+}
+colors2();
